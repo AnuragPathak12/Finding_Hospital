@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-26T17:29:50 IST" name="Suite" finished-at="2024-02-26T17:30:41 IST" duration-ms="50973">
+    <groups>
+      <group name="smoke">
+        <method signature="SearchDoctors.validateLogo()[pri:1, instance:testCases.SearchDoctors@7b98f307]" name="validateLogo" class="testCases.SearchDoctors"/>
+        <method signature="SearchDoctors.validateTitle()[pri:2, instance:testCases.SearchDoctors@7b98f307]" name="validateTitle" class="testCases.SearchDoctors"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-02-26T17:29:50 IST" name="Test" finished-at="2024-02-26T17:30:41 IST" duration-ms="50973">
+      <class name="baseClasses.BaseClass">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:baseClasses.BaseClass@31304f14]" started-at="2024-02-26T17:29:50 IST" name="setup" finished-at="2024-02-26T17:29:58 IST" duration-ms="7879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:baseClasses.BaseClass@31304f14]" started-at="2024-02-26T17:30:40 IST" name="tearDown" finished-at="2024-02-26T17:30:41 IST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- baseClasses.BaseClass -->
+      <class name="testCases.ListingSurgeries">
+        <test-method signature="verifySurgeryPage()[pri:1, instance:testCases.ListingSurgeries@34123d65]" started-at="2024-02-26T17:30:13 IST" name="verifySurgeryPage" finished-at="2024-02-26T17:30:14 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySurgeryPage -->
+        <test-method signature="availableSurgeries()[pri:2, instance:testCases.ListingSurgeries@34123d65]" started-at="2024-02-26T17:30:15 IST" name="availableSurgeries" finished-at="2024-02-26T17:30:16 IST" duration-ms="1952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- availableSurgeries -->
+      </class> <!-- testCases.ListingSurgeries -->
+      <class name="testCases.SearchDoctors">
+        <test-method signature="validateLogo()[pri:1, instance:testCases.SearchDoctors@7b98f307]" started-at="2024-02-26T17:29:58 IST" name="validateLogo" finished-at="2024-02-26T17:29:58 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogo -->
+        <test-method signature="validateTitle()[pri:2, instance:testCases.SearchDoctors@7b98f307]" started-at="2024-02-26T17:29:58 IST" name="validateTitle" finished-at="2024-02-26T17:29:58 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method signature="validateSpeciality()[pri:3, instance:testCases.SearchDoctors@7b98f307]" started-at="2024-02-26T17:29:58 IST" name="validateSpeciality" finished-at="2024-02-26T17:30:02 IST" duration-ms="3276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSpeciality -->
+      </class> <!-- testCases.SearchDoctors -->
+      <class name="testCases.CorporateForm">
+        <test-method signature="verifyFormPage()[pri:1, instance:testCases.CorporateForm@59474f18]" started-at="2024-02-26T17:30:17 IST" name="verifyFormPage" finished-at="2024-02-26T17:30:21 IST" duration-ms="4083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormPage -->
+        <test-method signature="validateForm()[pri:6, instance:testCases.CorporateForm@59474f18]" started-at="2024-02-26T17:30:21 IST" name="validateForm" finished-at="2024-02-26T17:30:39 IST" duration-ms="18315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForm -->
+      </class> <!-- testCases.CorporateForm -->
+      <class name="testCases.ListingReqDoctors">
+        <test-method signature="validateFilters()[pri:1, instance:testCases.ListingReqDoctors@4802796d]" started-at="2024-02-26T17:30:02 IST" name="validateFilters" finished-at="2024-02-26T17:30:11 IST" duration-ms="9166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFilters -->
+        <test-method signature="getDetails()[pri:2, instance:testCases.ListingReqDoctors@4802796d]" started-at="2024-02-26T17:30:11 IST" name="getDetails" finished-at="2024-02-26T17:30:13 IST" duration-ms="2059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetails -->
+      </class> <!-- testCases.ListingReqDoctors -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
