@@ -7,45 +7,20 @@
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.ListingSurgeries">
-        <methods>
-          <include name="verifySurgeryPage"/>
-          <include name="availableSurgeries"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.ListingSurgeries -->
-      <class name="testCases.SearchDoctors">
-        <methods>
-          <include name="validateTitle"/>
-          <include name="validateLogo"/>
-          <include name="setup"/>
-          <include name="validateSpeciality"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.SearchDoctors -->
-      <class name="testCases.ListingReqDoctors">
-        <methods>
-          <include name="getDetails"/>
-          <include name="validateFilters"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.ListingReqDoctors -->
       <class name="testCases.CorporateForm">
         <methods>
           <include name="setup"/>
-          <include name="verifyFormPage"/>
           <include name="validateForm"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.CorporateForm -->
-      <class name="baseClasses.BaseClass">
+      <class name="testCases.ListingReqDoctors">
         <methods>
           <include name="setup"/>
+          <include name="validateFilters"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- baseClasses.BaseClass -->
+      </class> <!-- testCases.ListingReqDoctors -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

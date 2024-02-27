@@ -12,11 +12,11 @@ import pageObjectClasses.ListingDoctorsPOC;
 public class ListingReqDoctors extends BaseClass {
 	ListingDoctorsPOC listingDoctor;
 	
-	@Test(priority = 1)
+	@Test(priority = 4, groups = {"regression"})
 	public void validateFilters() {
 		listingDoctor = new ListingDoctorsPOC(driver);
-		SoftAssert filterAsserts = new SoftAssert();
 		
+		SoftAssert filterAsserts = new SoftAssert();
 		
 		filterAsserts.assertEquals(listingDoctor.patientStoriesFilter(), "10+ Patient Stories");
 		filterAsserts.assertEquals(listingDoctor.experienceFilter(), "15+ Years of experience");
@@ -27,8 +27,10 @@ public class ListingReqDoctors extends BaseClass {
 		
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 5, groups = {"smoke", "regression"})
 	public void getDetails() throws IOException {
+		listingDoctor = new ListingDoctorsPOC(driver);
+
 		Assert.assertEquals(listingDoctor.getDoctors(), "Best Dentists Near Me In Bangalore - Instant Appointment Booking, View Fees, Feedbacks | Practo");
 	}
 }

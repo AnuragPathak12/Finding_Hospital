@@ -2,7 +2,6 @@ C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\baseClasses\B
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\commonMethods\ExcelUtils.java
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\commonMethods\ExtentReportManager.java
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\commonMethods\MyExplicitWait.java
-C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\commonMethods\ScreenshotsTaker.java
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\pageObjectClasses\CorporateFormPOC.java
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\pageObjectClasses\ListingDoctorsPOC.java
 C:\Users\2304075\eclipse-workspace\hackathon_project\src\test\java\pageObjectClasses\ListingSurgeriesPOC.java

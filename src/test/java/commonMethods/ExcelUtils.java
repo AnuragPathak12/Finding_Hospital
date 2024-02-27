@@ -37,7 +37,7 @@ public class ExcelUtils {
 		int totalrows=ws.getLastRowNum();
 		int totalcells=ws.getRow(1).getLastCellNum();
 		
-//		System.out.println(totalrows +"  "+ totalcells);
+		System.out.println(totalrows +"  "+ totalcells);
 		
 		String[][] data = new String [totalrows][totalcells];
 		DataFormatter dataFormat = new DataFormatter();
@@ -68,9 +68,7 @@ public class ExcelUtils {
 		
 		int totalrows=ws.getLastRowNum();
 		int totalcells=ws.getRow(1).getLastCellNum();
-		
-//		System.out.println(totalrows +"  "+ totalcells);
-		
+				
 		DataFormatter dataFormat = new DataFormatter();
 		
 		for(int r=1;r<=totalrows;r++)

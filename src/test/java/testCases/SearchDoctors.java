@@ -26,8 +26,10 @@ public class SearchDoctors extends BaseClass {
 		Assert.assertEquals(searchDoctorsPOC.applicationTitle(), "Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests");
 	}
 	
-	@Test(priority = 3)
-	public void validateSpeciality() throws InterruptedException {
+	@Test(priority = 3, groups = {"smoke", "regression"})
+	public void validateSpeciality() throws InterruptedException, IOException {
+		searchDoctorsPOC = new SearchDoctorsPOC(driver);
+
 		searchDoctorsPOC.setNearLoc();
 		Assert.assertEquals(searchDoctorsPOC.searchForDoctors(), "Dentist");
 	}

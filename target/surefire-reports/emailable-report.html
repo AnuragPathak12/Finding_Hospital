@@ -9,14 +9,46 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">50,973</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">54,933</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.CorporateForm</td><td><a href="#m0">validateForm</a></td><td rowspan="1">1708948821459</td><td rowspan="1">18315</td></tr><tr class="passedeven"><td><a href="#m1">verifyFormPage</a></td><td rowspan="1">1708948817162</td><td rowspan="1">4083</td></tr><tr class="passedodd"><td rowspan="2">testCases.ListingReqDoctors</td><td><a href="#m2">getDetails</a></td><td rowspan="1">1708948811733</td><td rowspan="1">2059</td></tr><tr class="passedodd"><td><a href="#m3">validateFilters</a></td><td rowspan="1">1708948802411</td><td rowspan="1">9166</td></tr><tr class="passedeven"><td rowspan="2">testCases.ListingSurgeries</td><td><a href="#m4">availableSurgeries</a></td><td rowspan="1">1708948815037</td><td rowspan="1">1952</td></tr><tr class="passedeven"><td><a href="#m5">verifySurgeryPage</a></td><td rowspan="1">1708948813926</td><td rowspan="1">815</td></tr><tr class="passedodd"><td rowspan="3">testCases.SearchDoctors</td><td><a href="#m6">validateLogo</a></td><td rowspan="1">1708948798241</td><td rowspan="1">58</td></tr><tr class="passedodd"><td><a href="#m7">validateSpeciality</a></td><td rowspan="1">1708948798918</td><td rowspan="1">3276</td></tr><tr class="passedodd"><td><a href="#m8">validateTitle</a></td><td rowspan="1">1708948798527</td><td rowspan="1">198</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.CorporateForm</td><td><a href="#m0">validateForm</a></td><td rowspan="1">1709051498599</td><td rowspan="1">404</td></tr><tr class="failedodd"><td rowspan="1">testCases.ListingReqDoctors</td><td><a href="#m1">validateFilters</a></td><td rowspan="1">1709051457876</td><td rowspan="1">28636</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.CorporateForm</td><td><a href="#m2">verifyFormPage</a></td><td rowspan="1">1709051491941</td><td rowspan="1">6431</td></tr><tr class="passedodd"><td rowspan="1">testCases.ListingReqDoctors</td><td><a href="#m3">getDetails</a></td><td rowspan="1">1709051486689</td><td rowspan="1">1583</td></tr><tr class="passedeven"><td rowspan="2">testCases.ListingSurgeries</td><td><a href="#m4">availableSurgeries</a></td><td rowspan="1">1709051489471</td><td rowspan="1">2271</td></tr><tr class="passedeven"><td><a href="#m5">verifySurgeryPage</a></td><td rowspan="1">1709051488436</td><td rowspan="1">746</td></tr><tr class="passedodd"><td rowspan="3">testCases.SearchDoctors</td><td><a href="#m6">validateLogo</a></td><td rowspan="1">1709051453277</td><td rowspan="1">87</td></tr><tr class="passedodd"><td><a href="#m7">validateSpeciality</a></td><td rowspan="1">1709051453986</td><td rowspan="1">3690</td></tr><tr class="passedodd"><td><a href="#m8">validateTitle</a></td><td rowspan="1">1709051453587</td><td rowspan="1">210</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testCases.CorporateForm#validateForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.CorporateForm#verifyFormPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.ListingReqDoctors#getDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.ListingReqDoctors#validateFilters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testCases.CorporateForm#validateForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.IOException: Zip bomb detected! The file would exceed the max. ratio of compressed file size to the size of the expanded data.
+This may indicate that the file is used to inflate memory usage and thus could pose a security risk.
+You can adjust this limit via ZipSecureFile.setMinInflateRatio() if you need to work with files which exceed this limit.
+Uncompressed size: 108206, Raw/compressed size: 1073, ratio: 0.009916
+Limits: MIN_INFLATE_RATIO: 0.010000, Entry: xl/styles.xml
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.checkThreshold(ZipArchiveThresholdInputStream.java:141)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:245)
+	at org.apache.poi.util.IOUtils.toByteArrayWithMaxLength(IOUtils.java:225)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:157)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:313)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:287)
+	at commonMethods.ExcelUtils.getCellData(ExcelUtils.java:34)
+	at pageObjectClasses.CorporateFormPOC.fillingForm(CorporateFormPOC.java:75)
+	at testCases.CorporateForm.validateForm(CorporateForm.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.ListingReqDoctors#validateFilters</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //header[@class = &apos;c-filter&apos;]/div[1]//div[6]/div/div/div//ul/li[2]/span (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2304075\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58573/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 943eb3ccc2a57bdcdfe878386aeb2e9b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonMethods.MyExplicitWait.visibilityWait(MyExplicitWait.java:14)
+	at pageObjectClasses.ListingDoctorsPOC.sorting(ListingDoctorsPOC.java:114)
+	at testCases.ListingReqDoctors.validateFilters(ListingReqDoctors.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.CorporateForm#verifyFormPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.ListingReqDoctors#getDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">testCases.ListingSurgeries#availableSurgeries</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">testCases.ListingSurgeries#verifySurgeryPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">testCases.SearchDoctors#validateLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

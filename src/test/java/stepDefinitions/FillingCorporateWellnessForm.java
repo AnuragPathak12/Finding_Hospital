@@ -16,7 +16,6 @@ public class FillingCorporateWellnessForm extends BaseClass{
 	@Given("User is on application web page")
 	public void user_is_on_application_web_page() {
 	   baseClass = new BaseClass();	
-//	   baseClass.setup("chrome");
 	}
 
 	@When("User clicks on Corporate dropdown and selects Health and Wellness Plan")

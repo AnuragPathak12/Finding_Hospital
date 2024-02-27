@@ -35,10 +35,8 @@ public class Hooks {
 
     @AfterStep
     public void addScreenshot(Scenario scenario) {
-        
-    	// this is for cucumber junit report
-        if(scenario.isFailed()) {
-        	
+        if((scenario.isFailed())|| (scenario.isFailed()==false)) {
+
         	TakesScreenshot ts=(TakesScreenshot) driver;
         	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
         	scenario.attach(screenshot, "image/png",scenario.getName());

@@ -22,7 +22,7 @@ public class ListingDoctors extends BaseClass{
 	}
 
 	@When("User enters required location and speciality")
-	public void user_enters_required_location_and_speciality() throws InterruptedException {
+	public void user_enters_required_location_and_speciality() throws InterruptedException, IOException {
 		
 		searchDoctor = new SearchDoctorsPOC(driver);
 		searchDoctor.setNearLoc();
